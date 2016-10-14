@@ -25,10 +25,12 @@ app.use(bodyParser.json());
 app.get('/pokemons', function(req, res) {
   db.pokemon_go_kaggle.find([], (err,result)=>{res.json(result)});
 });
-app.put('/pokemons', function(req, res){
+app.put('/pokemons/:id?', function(req, res){
   console.log('req',req.body);
   db.pokemon_go_kaggle.save(req.body, (err, result)=>{
     console.log(err, result);
+    if (err) { res.status(500).json({ success: false }); }
+    else { res.json(result); }
   })
 });
 app.use(express.static('.'));

@@ -26,6 +26,6 @@ Ext.define('Pokemonsters.view.main.List', {
     ],
 
     listeners: {
-        select: 'onItemSelected'
+        itemtap: 'onItemSelected'
     }
 });
