@@ -69,7 +69,7 @@ Ext.define('Pokemonsters.view.main.MainController', {
                   text: 'Submit',
                   iconCls: 'x-fa fa-check',
                   handler: function() {
-                      let form = this.up('formpanel');
+                      var form = this.up('formpanel');
                       // form.submit();
                       record.save();
                       form.destroy();
