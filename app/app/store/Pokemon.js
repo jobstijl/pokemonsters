@@ -4,6 +4,6 @@ Ext.define('Pokemonsters.store.Pokemon', {
     alias: 'store.pokemon',
 
     model: 'Pokemonsters.model.Pokemon',
-    
+
     autoLoad: true
 });

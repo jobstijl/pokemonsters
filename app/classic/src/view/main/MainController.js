@@ -10,8 +10,6 @@ Ext.define('Pokemonsters.view.main.MainController', {
     alias: 'controller.main',
 
     onItemSelected:  function ( dit, record , item , index , e , eOpts ) {
-      console.log("tralala", arguments, "record", record);
-      //Ext.Msg.alert("edit the shizzle");
       Ext.create('Ext.form.Panel', {
           xtype: 'form',
           title: 'Update Record',

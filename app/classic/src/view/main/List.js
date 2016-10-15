@@ -4,7 +4,6 @@
 Ext.define('Pokemonsters.view.main.List', {
     extend: 'Ext.grid.Panel',
     xtype: 'mainlist',
-    //height: 600,
 
     scrollable: true,
 

@@ -34,7 +34,6 @@ Ext.define('Pokemonsters.view.main.Main', {
             title: 'Home',
             iconCls: 'x-fa fa-home',
             layout: 'fit',
-            // The following grid shares a store with the classic version's grid as well!
             items: [{
                 xtype: 'mainlist'
             }]
