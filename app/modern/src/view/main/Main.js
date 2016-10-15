@@ -42,7 +42,7 @@ Ext.define('Pokemonsters.view.main.Main', {
             title: 'About',
             iconCls: 'x-fa fa-user',
             bind: {
-                html: 'Pokemon prog, geschreven door Job van der Weiden'
+                html: 'Pokemonsters test app, geschreven door Job van der Weiden'
             }
         }
     ]

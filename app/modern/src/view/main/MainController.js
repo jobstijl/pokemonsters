@@ -10,7 +10,7 @@ Ext.define('Pokemonsters.view.main.MainController', {
     alias: 'controller.main',
 
     onItemSelected: function (sender, idx, row, record) {
-      console.log("tralala", arguments);
+      //console.log("tralala", arguments);
       Ext.Viewport.add({
           xtype: 'formpanel',
           title: 'Update Record',

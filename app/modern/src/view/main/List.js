@@ -4,7 +4,7 @@
 Ext.define('Pokemonsters.view.main.List', {
     extend: 'Ext.grid.Grid',
     xtype: 'mainlist',
-
+    
     requires: [
         'Pokemonsters.store.Pokemon',
         'Pokemonsters.model.Pokemon'
