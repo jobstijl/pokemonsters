@@ -9,11 +9,11 @@ Ext.define('Pokemonsters.view.main.MainController', {
 
     alias: 'controller.main',
 
-    onItemSelected:  function ( record , item , index , e , eOpts ) {
-      console.log("tralala", arguments);
+    onItemSelected:  function ( dit, record , item , index , e , eOpts ) {
+      console.log("tralala", arguments, "record", record);
       //Ext.Msg.alert("edit the shizzle");
       Ext.create('Ext.form.Panel', {
-          xtype: 'formpanel',
+          xtype: 'form',
           title: 'Update Record',
           floating: true,
           centered: true,
@@ -65,7 +65,7 @@ Ext.define('Pokemonsters.view.main.MainController', {
                   text: 'Submit',
                   iconCls: 'x-fa fa-check',
                   handler: function() {
-                      var form = this.up('formpanel');
+                      var form = this.up('form');
                       form.mask({
                         xtype: 'loadmask',
                         message: 'Saving'
@@ -86,7 +86,7 @@ Ext.define('Pokemonsters.view.main.MainController', {
                   iconCls: 'x-fa fa-close',
                   handler: function() {
                     record.reject();
-                    this.up('formpanel').destroy();
+                    this.up('form').destroy();
                   }
               }]
           }],
