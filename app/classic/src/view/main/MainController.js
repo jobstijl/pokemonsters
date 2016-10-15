@@ -18,6 +18,7 @@ Ext.define('Pokemonsters.view.main.MainController', {
           width:300,
           modal: true,
           padding: 20,
+          bodyPadding: 20,
           viewModel : {
               data: {
                   pokemon: record
