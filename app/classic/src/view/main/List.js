@@ -19,13 +19,27 @@ Ext.define('Pokemonsters.view.main.List', {
     },
 
     columns: [
-        { text: 'index' , dataIndex: 'index' , width: 60  },
-        { text: 'Name'  , dataIndex: 'name'  , width: 100 },
-        { text: 'type1' , dataIndex: 'type_1', width: 100 },
-        { text: 'type2' , dataIndex: 'type_2', width: 100 },
-        { text: 'max cp', dataIndex: 'max_cp', width: 100 },
-        { text: 'max hp', dataIndex: 'max_hp', width: 100 }
+        { text: 'index' , dataIndex: 'index' , width: 60 ,
+          filter: 'number'
+        },
+        { text: 'Name'  , dataIndex: 'name'  , width: 100,
+          filter: 'string'
+        },
+        { text: 'type1' , dataIndex: 'type_1', width: 100,
+          filter: 'string'
+        },
+        { text: 'type2' , dataIndex: 'type_2', width: 100,
+          filter: 'string'
+        },
+        { text: 'max cp', dataIndex: 'max_cp', width: 100,
+          filter: 'number'
+        },
+        { text: 'max hp', dataIndex: 'max_hp', width: 100,
+          filter: 'number'
+        }
     ],
+
+    plugins: 'gridfilters',
 
     listeners: {
         itemclick: 'onItemSelected'
