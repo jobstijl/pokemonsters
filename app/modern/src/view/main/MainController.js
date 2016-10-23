@@ -24,13 +24,17 @@ Ext.define('Pokemonsters.view.main.MainController', {
               }
           },
           items: [{
+              xtype: 'image',
+              height: 64,
+              width: 64,
+              bind: {src: '{pokemon.image_url}'}
+          },{
               xtype: 'textfield',
               name: 'index',
               label: 'index',
               disabled: true,
               bind: '{pokemon.index}'
-          },
-          {
+          },{
               xtype: 'textfield',
               name: 'name',
               label: 'name',

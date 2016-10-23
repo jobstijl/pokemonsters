@@ -4,7 +4,7 @@ Ext.define('Pokemonsters.model.Pokemon', {
     idProperty: 'index',
 
     fields: [
-        'index','name', 'type_1', 'type_2', 'max_cp', 'max_hp'
+        'index','name', 'type_1', 'type_2', 'max_cp', 'max_hp', 'image_url'
     ],
 
     proxy: {
